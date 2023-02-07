@@ -381,7 +381,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 await client.send_cached_media(
                     chat_id=query.from_user.id,
                     file_id=file_id,
-                    caption=f'<b><i><a href='https://t.me/sk_movies_Group'>{title}<\i></a> \n\n🔰𝐂𝐥𝐢𝐜𝐤 👉 @Sk_Movies12 </b>',
+                    caption=f'<code>{title}</code>\n\n<b>🔰𝐂𝐥𝐢𝐜𝐤 👉 @Sk_Movies12 </b>',
                     reply_markup=InlineKeyboardMarkup(buttons),
                     protect_content=True if ident == "filep" else False 
                 )
@@ -421,7 +421,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await client.send_cached_media(
             chat_id=query.from_user.id,
             file_id=file_id,
-            caption=f'<b><i><a href='https://t.me/sk_movies_Group'>{title}<\i></a> \n\n🔰𝐂𝐥𝐢𝐜𝐤 👉 @Sk_Movies12 </b>',
+            caption=f'<code>{title}</code>\n\n<b>🔰𝐂𝐥𝐢𝐜𝐤 👉 @Sk_Movies12 </b>',
             reply_markup=InlineKeyboardMarkup(buttons),
             protect_content=True if ident == 'checksubp' else False
         )
