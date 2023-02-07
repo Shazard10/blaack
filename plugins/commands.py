@@ -246,7 +246,7 @@ async def start(client, message):
     await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
-        caption=f'<b>{title} \n\n 🔰𝐂𝐥𝐢𝐜𝐤 👉 @Sk_Movies12 </b>',
+        caption=f'<b><i><a href='https://t.me/sk_movies_Group'>{title}<\i></a> \n\n🔰𝐂𝐥𝐢𝐜𝐤 👉 @Sk_Movies12 </b>',
         protect_content=True if pre == 'filep' else False,
         reply_markup=InlineKeyboardMarkup(buttons),
         )   
